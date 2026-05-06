@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sebastián Web</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #e6d6ff; /* morado claro */
+        color: #2c2c54;
+    }
+
+    header {
+        background-color: #6c5ce7;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .menu {
+        text-align: center;
+        margin: 20px;
+    }
+
+    button {
+        background-color: #5a4fcf; /* morado fuerte */
+        border: none;
+        padding: 12px 20px;
+        margin: 10px;
+        color: white;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #3d36a8; /* más oscuro al pasar el mouse */
+    }
+
+    .section {
+        display: none;
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        color: #333;
+    }
+
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    function mostrarSeccion(id) {
+        let secciones = document.querySelectorAll('.section');
+        secciones.forEach(sec => sec.classList.remove('active'));
+
+        document.getElementById(id).classList.add('active');
+    }
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Sebastián Web</h1>
+</header>
+
+<div class="menu">
+    <button onclick="mostrarSeccion('info')">Información Personal</button>
+    <button onclick="mostrarSeccion('regalos')">Regalos Favoritos</button>
+    <button onclick="mostrarSeccion('relaciones')">Relaciones</button>
+    <button onclick="mostrarSeccion('autor')">Mi Información</button>
+</div>
+
+<div id="info" class="section active">
+    <h2>Información de Sebastian</h2>
+    <p>Sebastián es un personaje del videojuego Stardew Valley. Vive en las montañas, en la casa de su madre Robin, junto con su padrastro Demetrius y su media hermana Maru. Su habitación está en el sótano, lo que refleja bastante su personalidad reservada.
+
+Es una persona introvertida, seria y algo solitaria. Prefiere pasar tiempo solo, normalmente trabajando en su computadora como programador o saliendo en su motocicleta. Tiene un estilo más oscuro y alternativo, lo que se nota en su forma de vestir y en sus gustos.
+
+A Sebastián le gustan mucho las noches y la lluvia; suele sentirse más cómodo cuando el clima es tranquilo o melancólico. También disfruta fumar ocasionalmente y tocar música, especialmente algo más relajado o indie.
+
+Aunque al principio puede parecer distante o frío, en realidad es alguien sensible y reflexivo. Con el tiempo, si el jugador gana su confianza, muestra un lado más amable, leal e incluso romántico.
+
+Uno de sus sueños es mudarse a la ciudad para tener más oportunidades y escapar un poco de la rutina del pueblo, aunque también tiene conflictos internos sobre dejar atrás a su familia.</p>
+</div>
+
+<div id="regalos" class="section">
+    <ul>
+ <h2>Regalos que ama:</h2>
+<li>Lágrima congelada</li>
+<li>Obsidiana</li>
+<li>Huevo de vacío</li>
+<li>Sashimi</li>
+<h2>Como dato extra:</h2>
+<li>El sashimi es especialmente fácil de conseguir porque solo necesitas cualquier pez y la receta, así que es uno de los regalos más prácticos para subir rápido su nivel de corazones.</li>
+        </ul>
+</div>
+
+<div id="relaciones" class="section">
+    <h2>Relacion con su familia</h2>
+<p>Sebastian vive en las montañas junto a su madre Robin, su padrastro Demetrius y su media hermana Maru. Su relación con Robin es relativamente cercana, ya que ella se preocupa por él, aunque Sebastián a veces siente que no logra comprender del todo su forma de ser o sus intereses. Con Demetrius, la relación es más complicada y tensa; Sebastián percibe que su padrastro no conecta con él y que, en ocasiones, muestra preferencia hacia Maru, lo que genera cierta incomodidad. En cuanto a Maru, no existe un conflicto directo, pero sí una distancia emocional evidente. Sebastián no se siente del todo integrado en la dinámica familiar, lo que refuerza su tendencia a aislarse.</p>
+
+<h2>Relacion con sus amigos</h2>
+<p>Dentro de su círculo social, Sebastián mantiene una relación cercana con Sam y Abigail. Con Sam comparte una amistad muy sólida; suelen pasar tiempo juntos, tocar música y relajarse, lo que muestra un lado más tranquilo y accesible de Sebastián. Abigail también es una amiga importante, ya que ambos comparten intereses similares, como lo alternativo, lo oscuro y lo fuera de lo convencional. Cuando están juntos, Sebastián se siente más cómodo expresándose, lo que contrasta con su comportamiento más reservado en otros contextos.</p>
+
+<h2> La personalidad de Sebastian con sus relaciones</h2>
+<p>La forma en que Sebastián se relaciona con los demás está profundamente influenciada por su personalidad introvertida. Le cuesta abrirse emocionalmente y suele mantener cierta distancia al inicio, lo que puede hacer que parezca frío o desinteresado. Sin embargo, esta actitud es más una forma de protección que una falta de interés. A medida que gana confianza, demuestra ser una persona leal, sensible y reflexiva. Sus amistades son muy importantes para él, ya que le brindan un espacio donde puede ser auténtico sin sentirse juzgado. Aun así, mantiene un deseo constante de independencia, lo que se refleja en su sueño de mudarse a la ciudad y construir su propio camino, lejos de las tensiones familiares.</p>
+</div>
+<div id="autor" class="section">
+    <h2>Mi informacion</h2>
+    <p>Nombre de el alumno: Kamila Leon Garcia </p>
+    <p>Escuela: CBTIS93</p>
+    <p>Materia: Diseña Aplicaciones
+Moviles Multplataforma</p>
+</div>
+
+</body>
+</html>
